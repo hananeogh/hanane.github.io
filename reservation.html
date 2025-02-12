@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation de Restaurant</title>
+    <link rel="stylesheet" href="style reservation.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue</h1>
+    </header>
+    <main>
+        <form class="reservation-form">
+            <div class="form-group">
+                <label for="name">Nom Complet :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Numéro de Téléphone :</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date de Réservation :</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Heure de Réservation :</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Nombre de Convives :</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" required>
+            </div>
+            <button type="submit">Réserver Maintenant</button>
+        </form>
+    </main>
+</body>
+</html>

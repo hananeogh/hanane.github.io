@@ -1,0 +1,114 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(39, 32, 32);
+  color: #fff;
+}
+.custom-navbar {
+  background: linear-gradient(to left, red, rgb(209, 107, 5));
+  padding: 10px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 6px 3px 6px #1e140d;
+  transition: transform 0.3s ease; 
+}
+.logo:hover {
+  transform: scale(1.05); 
+}
+.animated-logo {
+  animation: float 3s ease-in-out infinite; 
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); 
+  }
+}
+.nav-link {
+  color: #fff !important;
+  font-size: 1rem;
+  font-family:Georgia, Times, serif;
+  text-shadow: 2px 2px 4px rgba(134, 33, 33, 0.5);
+  position: relative;
+  transition: color 0.3s, transform 0.3s;
+}
+.nav-link:hover {
+  color: #5f3b02 !important;
+  transform: translateY(-2px); 
+}
+.animated-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #560101;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+.animated-link:hover::after {
+  width: 100%;
+}
+.hero {
+  padding: 50px 0;
+  background-color: rgb(39, 32, 32);
+}
+.hero h1 {
+  text-shadow: 2px 2px 8px #aa2525;
+  font-size: 40px;
+  margin-bottom: 20px;
+  animation: slideIn 1.5s ease-out;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.custom-btn {
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background: linear-gradient(red, rgb(209, 107, 5));
+  color: #f1eded;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.custom-btn:hover {
+  background: linear-gradient(rgb(209, 107, 5), red);
+}
+.custom-img {
+  width: 550px;
+  border: inset rgb(209, 107, 5);
+  box-shadow: 0 0 20px red;
+  border-radius: 50%;
+}
+.footer {
+  background-color:rgb(39, 32, 32);
+  padding: 20px 0;
+  text-align: center;
+}
+.footer p {
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px #aa2525;
+  font-size: 16px;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
